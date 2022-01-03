@@ -5,7 +5,8 @@ public class Creature extends Carte{
     private int pointsDegats;
     private int pointsVie;
 
-    public Creature(String nom, int pointsDegats, int pointsVie) {
+    public Creature(int cout, String nom, int pointsDegats, int pointsVie) {
+        super(cout);
         this.nom = nom;
         this.pointsDegats = pointsDegats;
         this.pointsVie = pointsVie;
@@ -15,4 +16,5 @@ public class Creature extends Carte{
     public String toString() {
         return "Une créature "+ nom +" "+ pointsDegats +"/"+pointsVie;
     }
+
 }

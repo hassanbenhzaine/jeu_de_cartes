@@ -3,9 +3,9 @@ package com.youcode;
 public class Terrain extends Carte{
     private char couleur;
 
-    public Terrain(char couleur) {
+    public Terrain(int cout, char couleur) {
+        super(cout);
         this.couleur = couleur;
-        this.setCout(0);
     }
 
     @Override

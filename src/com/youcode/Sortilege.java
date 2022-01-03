@@ -4,7 +4,8 @@ public class Sortilege extends Carte{
     private String nom;
     private String explication;
 
-    public Sortilege(String nom, String explication) {
+    public Sortilege(int cout, String nom, String explication) {
+        super(cout);
         this.nom = nom;
         this.explication = explication;
     }
